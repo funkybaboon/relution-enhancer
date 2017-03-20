@@ -9,3 +9,5 @@ function insertAfter(newNode, referenceNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 insertAfter(document.querySelector('#btn-login'), document.querySelector('.input-password'));
+
+console.info("Relution Enhancer applied");
