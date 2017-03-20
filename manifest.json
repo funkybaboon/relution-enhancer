@@ -3,9 +3,6 @@
   "name": "Relution Enhancer",
   "description": "Login without a hassle into Relution",
   "version": "1.0",
-  "browser_action": {
-    "default_popup": "popup.html"
-  },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
