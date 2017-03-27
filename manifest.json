@@ -2,14 +2,14 @@
   "manifest_version": 2,
   "name": "Relution Enhancer",
   "description": "Login without a hassle into Relution",
-  "version": "2.2",
+  "version": "2.4",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
   },
   "permissions": [
-    "https://*.relution.io/*"
+    "https://*.relution.io/relution/portal/#/login"
   ],
   "background": {
     "scripts": [
