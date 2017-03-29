@@ -7,25 +7,26 @@ function sleep(ms) {
 }
 
 async function runExtension() {
+
   await sleep(500);
 
 
-    function escapeRegExp(str) {
-      return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
-    }
+  function escapeRegExp(str) {
+    return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+  }
 
-    function matchUrl() {
-      var currentUrl = window.location.toString();
-      var loginUrl =
-        escapeRegExp("https://") +
-        '[^\\.]+' +
-        escapeRegExp(".relution.io/relution/portal/#/login");
-      loginUrl = new RegExp(loginUrl);
+  function matchUrl() {
+    var currentUrl = window.location.toString();
+    var loginUrl =
+      escapeRegExp("https://") +
+      '[^\\.]+' +
+      escapeRegExp(".relution.io/relution/portal/#/login");
+    loginUrl = new RegExp(loginUrl);
 
-      return result = loginUrl.test(currentUrl);
-    }
+    return result = loginUrl.test(currentUrl);
+  }
 
-    if (matchUrl()) {
+  if (matchUrl()) {
 
     var rememberMeCheckbox = document.querySelector('.remember-me');
     var loginButton = document.querySelector('#btn-login');
@@ -51,3 +52,4 @@ async function runExtension() {
 }
 
 runExtension();
+
